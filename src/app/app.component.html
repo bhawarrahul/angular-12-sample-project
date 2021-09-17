@@ -1,4 +1,14 @@
+<p>User Data</p>
 
-<p>
-  Start editing to see some magic happen :)
-</p>
+<div id="table-div">
+  <table>
+    <ng-container *ngFor="let user of usersList">
+      <tr>
+        <td>{{ user.getId() }}</td>
+        <td>{{ user.getName() }}</td>
+        <td>{{ user.getMobile() }}</td>
+        <td>{{ user.getAddress() }}</td>
+      </tr>
+    </ng-container>
+  </table>
+</div>
